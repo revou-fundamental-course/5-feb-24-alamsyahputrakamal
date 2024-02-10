@@ -5,9 +5,13 @@ function clickKonversi()
     var valuecelcius = celcius.value; // mendapatkan value dari form celcius
     var fahrenheit = document.getElementById("fahrenheit");
     var hasil = valuecelcius * 1.8 + 32; // mengkonversikan value dari celcius sesuai rumus konversi ke fahrenheit  
-    fahrenheit.innerHTML = hasil; // mendapatkan value untuk fahrenheit dari hasil konversi 
-    var cara = document.getElementById("cara");
-    cara.innerHTML = (`${valuecelcius} * (9/5) + 32 : ${hasil}`) // menampilkan value dari hasil konversi
+    if (valuecelcius == ""){ // jika tidak ada value yang d input
+        alert("Tolong masukkan jumlah celcius");
+    }else{ // sebaliknya jika ada value yang di input
+        fahrenheit.innerHTML = hasil; // mendapatkan value untuk fahrenheit dari hasil konversi 
+        var cara = document.getElementById("cara");
+        cara.innerHTML = (`${valuecelcius}° * (9/5) + 32 : ${hasil}`) // menampilkan value dari hasil konversi
+    }
 };
 function clickReset(){
     // mereset semua
