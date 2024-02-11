@@ -3,13 +3,45 @@ body{
     padding: 0;
     height: auto;
     overflow: hidden;
-    text-align: center;
+    background-color: rgba(142, 54, 54, 0.33);
 }
 h2{
     padding: 5px;
     text-align: center;
     margin: 2px;
-}.textarea{
+}
+.form{
+    position: relative;
+    width: auto;
+}
+.form1{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    place-content: center;
+
+}
+.tombolku{
+    text-align: center;
+}
+.textarea,.hasil{
     resize: none;
     margin: 5px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+span{
+    text-align: center;
+}
+.row{
+    width: 75%;
+    margin:0 0 0 14% ;
+    border: 1px solid brown;
+}
+.form.reverse .textarea{
+    background-color: red;
 }

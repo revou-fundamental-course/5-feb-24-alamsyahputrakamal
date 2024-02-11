@@ -17,3 +17,6 @@ function clickReset(){
     // mereset semua
     window.location.reload();
 }
+function clickReverse(){
+    document.querySelector(".form").classList.toggle("reverse");
+}

@@ -8,19 +8,31 @@
 </head>
 <body>
     <h2>Tugas Revou oleh Alamsyah Putra Kamal</h2>
-    <h4>Konversi Celcius to Farhenheit</h4>
-    <script src="./js/script.js"></script>
-        <label for="celcius">Celcius :</label><br/>
-        <input type="text" name="celcius" id="celcius" cols="30" rows="1" class="textarea" placeholder="masukkan saja"><br/>
-        <button id="konversi" onclick="clickKonversi()">konversi</button>
-        <button id="reset" onclick="clickReset()">reset</button>
-        <button id="reverse">reverse</button>
+    <div class="form">
+        <div class="form1">
+        <h4>Konversi Celcius to Farhenheit</h4>
+        <label for="celcius">Celsius :<br/>
+            <textarea id="celcius" class="textarea" placeholder="masukkan saja" name="celcius" cols="25" rows="2" ></textarea>
+        </label><br/>
+        <div class="tombolku">
+        <button id="konversi" class="tombol" onclick="clickKonversi()">konversi</button>
+        <button id="reset" class="tombol" onclick="clickReset()">reset</button>
+        <button id="reverse" class="tombol" onclick="#">reverse</button>
+        </div>
         <br/>
         <label for="fahrenheit">Fahrenheit :<br/>
-        <textarea id="fahrenheit" class="textarea" placeholder="masukkan saja" name="fahrenheit" cols="18" rows="2" ></textarea>
+        <textarea id="fahrenheit" class="textarea" placeholder="masukkan saja" name="fahrenheit" cols="25" rows="2" ></textarea>
         </label><br/>
         <label for="cara">Cara Kalkulasi :<br/>
-        <textarea name="cara" id="cara" cols="25" rows="1" class="textarea">
-        </textarea></label>
+        <textarea name="cara" id="cara" cols="25" rows="1" class="hasil" readonly="yes">
+        </textarea></label><br/>
+        <a href="#">Fahrenheit Ke celsius</a><br/>
+        </div>
+        <span><h3>Cara Konversi dari Celcius (°C) ke Fahrenheit (°F)</h3></span>
+        <div class="row"></div>
+
+    </div>
+
+        <script src="./js/script.js"></script>
 </body>
 </html>
